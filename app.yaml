@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: live-cricket-score-container
-          image: gcr.io/x-landing-466108-p9/live-cricket-score-app:latest
+          image: us-central1-docker.pkg.dev/inbound-respect-466416-h0/livecricscore:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
@@ -28,6 +28,6 @@ spec:
     app: live-cricket-score
   ports:
     - protocol: TCP
-      port: 5000
-      targetPort: 5000
+      port: 8080
+      targetPort: 8080
   type: LoadBalancer
