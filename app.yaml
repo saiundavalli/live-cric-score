@@ -17,7 +17,7 @@ spec:
           image: us-central1-docker.pkg.dev/inbound-respect-466416-h0/livecricscore:latest
           imagePullPolicy: Always
           ports:
-            - containerPort: 5000
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
