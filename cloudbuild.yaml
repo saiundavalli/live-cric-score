@@ -1,9 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/inbound-respect-466416-h0/livecric:$SHORT_SHA', '.']
+    args: ['build', '-t', 'gcr.io/inbound-respect-466416-h0/livecric:latest', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/inbound-respect-466416-h0/livecric:$SHORT_SHA']
+    args: ['push', 'gcr.io/inbound-respect-466416-h0/livecric:latest']
 
   -  name: "gcr.io/cloud-builders/gke-deploy"
      args:
@@ -12,7 +12,7 @@ steps:
      - --location=us-central1
      - --cluster=autopilot-cluster-1
 images:
-  - 'gcr.io/inbound-respect-466416-h0/livecric:$SHORT_SHA'
+  - 'gcr.io/inbound-respect-466416-h0/livecric:latest'
 
 options:
 logging: CLOUD_LOGGING_ONLY
