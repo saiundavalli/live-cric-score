@@ -15,4 +15,4 @@ images:
   - 'gcr.io/inbound-respect-466416-h0/livecric:latest'
 
 options:
-logging: CLOUD_LOGGING_ONLY
+        logging: CLOUD_LOGGING_ONLY
