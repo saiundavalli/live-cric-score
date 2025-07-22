@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: live-cricket-score-container
-          image: us-central1-docker.pkg.dev/inbound-respect-466416-h0/livecricscore:latest
+          image: gcr.io/inbound-respect-466416-h0/livecric:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
